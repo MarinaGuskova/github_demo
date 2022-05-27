@@ -1,0 +1,30 @@
+.small_img {
+    width: 400px;
+    height: 500px;
+    background-color: black;
+
+    /* всё, что больше скрывать в скролл/прятать */
+    /* overflow: scroll; */
+} 
+
+/* > применяется для уровня выше. Размер как у родителя */
+.small_img > img {
+    width: 100%;
+    height: 90%;
+    /* Занимает всю площадь картинки */
+    object-fit: cover;
+    object-position: right;
+    /* Если не срабатывает что-то или для margin (т.е. делаем блочный элемент из строчного */
+    display: block;
+}
+.fa-bugs {
+    font-size: 40px; 
+    color: red; 
+    cursor: pointer;
+}
+
+.fa-cat {
+    font-size: 30px;
+    color: rebeccapurple;
+    cursor: pointer;
+}
